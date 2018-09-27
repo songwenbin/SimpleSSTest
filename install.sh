@@ -7,6 +7,6 @@ CURDIR=`pwd`
 OLDGOPATH="$GOPATH"
 export GOPATH="$CURDIR"
 gofmt -w src
-go build test
+go build main.go
 export GOPATH="$OLDGOPATH"
 echo 'finished'
